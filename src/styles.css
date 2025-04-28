@@ -1,5 +1,4 @@
-/* Estilos base */
-/* Estilos para el header */
+
 .header {
   background: linear-gradient(to right, #ff9a9e, #fad0c4);
   padding: 1.5rem 2rem;
@@ -31,7 +30,7 @@ header a{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para la navegación */
+
 .header nav {
   max-width: 1200px;
   margin: 0 auto;
@@ -63,13 +62,13 @@ header a{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto activo para la página actual */
+
 #lista-header li a.active {
   background-color: #fff;
   color: #e53935;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .header {
     padding: 1rem;
@@ -89,7 +88,7 @@ header a{
     padding: 0.3rem 0.8rem;
   }
 }
-/* Estilos generales */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -99,7 +98,6 @@ body {
   line-height: 1.6;
 }
 
-/* Hero section - Portada principal */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -129,7 +127,10 @@ body {
   margin: 0 auto 2rem;
 }
 
-/* Botón Call-to-Action */
+.hero a{
+  font-size: 30px
+}
+
 .cta {
   display: inline-block;
   background: linear-gradient(to right, #ff6b6b, #ff8e8e);
@@ -153,7 +154,6 @@ body {
   background: linear-gradient(to right, #ff5252, #ff7676);
 }
 
-/* Sección de características (puedes añadir después del hero si lo necesitas) */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -188,12 +188,12 @@ body {
 }
 footer{
   display: flex;
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center; /* Centra los elementos verticalmente */
-  align-items: center; /* Alinea horizontalmente en el centro */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
   
 }
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .hero {
     padding: 3rem 1rem;
@@ -223,7 +223,6 @@ footer{
     font-size: 1rem;
   }
 }
-/* Estilos para el contenedor principal de categoría */
 .category-container {
   max-width: 1200px;
   margin: 2rem auto;
@@ -249,7 +248,6 @@ footer{
   border-radius: 2px;
 }
 
-/* Grid de recetas */
 .recipes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -257,7 +255,6 @@ footer{
   padding: 1rem 0;
 }
 
-/* Tarjeta de receta */
 .recipe-card {
   background: white;
   border-radius: 12px;
@@ -324,7 +321,6 @@ footer{
   text-decoration: underline;
 }
 
-/* Filtros y búsqueda (opcional) */
 .recipe-filters {
   display: flex;
   justify-content: center;
@@ -349,7 +345,6 @@ footer{
   color: white;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .recipes-grid {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -372,7 +367,6 @@ footer{
     align-items: center;
   }
 }
-/* Contenedor principal de recetas */
 .recetas-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -382,7 +376,6 @@ footer{
   margin: 0 auto;
 }
 
-/* Tarjeta individual de receta */
 .receta {
   background: #fff;
   border-radius: 12px;
@@ -398,7 +391,6 @@ footer{
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Imagen de la receta */
 .receta img {
   width: 100%;
   height: 200px;
@@ -406,7 +398,6 @@ footer{
   border-bottom: 3px solid #ff6b6b;
 }
 
-/* Contenido de la tarjeta */
 .receta > div {
   padding: 1.5rem;
   flex-grow: 1;
@@ -427,7 +418,6 @@ footer{
   margin-bottom: 1rem;
 }
 
-/* Botón de ver receta */
 .receta a {
   margin-top: auto;
   display: inline-block;
@@ -446,7 +436,6 @@ footer{
   box-shadow: 0 4px 12px rgba(255, 107, 107, 0.25);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .recetas-container {
       grid-template-columns: 1fr;
@@ -461,7 +450,6 @@ footer{
       height: 180px;
   }
 }
-/* Estilos específicos para página de detalle */
 .recipe-detail {
   max-width: 1200px;
   margin: 2rem auto;
@@ -556,7 +544,6 @@ footer{
   height: 100%;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .recipe-featured-img {
     height: 300px;
@@ -605,8 +592,8 @@ footer{
 #tema-btn{
   display: inline-block;
   margin-top: 5%;
-  background: rgb(99, 68, 68);  /* Un tono marrón oscuro */
-color: rgb(255, 230, 230);  /* Un tono rosa muy claro */
+  background: rgb(99, 68, 68);  
+color: rgb(255, 230, 230);  
 padding: 0.3rem 1.5rem;
   border-radius: 30px;
   text-decoration: none;
@@ -618,4 +605,17 @@ padding: 0.3rem 1.5rem;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.pizza {
+  width: 50px;
+  height: 50px;
+  animation: spin 5s linear infinite;
+  margin: 20px auto;
+  display: block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
