@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Detalle de Receta</title>
     <link rel="stylesheet" href="../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -12,7 +13,15 @@
 
         <article class="recipe-content">
             <!-- Imagen destacada -->
-            <img src="../img/ensalada-cesar.jpg" alt="Ensalada César" class="recipe-featured-img">
+            <picture>
+                <!-- Imagen para pantallas grandes -->
+                <source media="(min-width: 768px)" srcset="../img/ensalada-cesar-desktop.jpg">
+                <!-- Imagen para móviles -->
+                <source media="(max-width: 767px)" srcset="../img/ensalada-cesar.jpg">
+                <!-- Fallback -->
+                <img src="../img/ensalada-cesar.jpg" alt="Plato terminado de pasta con salsa al pesto" class="recipe-featured-img">
+              </picture>
+            
 
             <!-- Encabezado -->
             <header class="recipe-header">

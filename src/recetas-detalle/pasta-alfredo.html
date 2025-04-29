@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <title>Detalle de Receta</title>
     <link rel="stylesheet" href="../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
     <main class="recipe-detail">
 
         <article class="recipe-content">
-            <!-- Imagen destacada -->
-            <img src="../img/pasta-alfredo.jpg" alt="Pasta Alfredo" class="recipe-featured-img">
+            <picture>
+                <!-- Imagen para pantallas grandes -->
+                <source media="(min-width: 768px)" srcset="../img/pasta-alfredo-desktop.jpg">
+                <!-- Imagen para móviles -->
+                <source media="(max-width: 767px)" srcset="../img/pasta-alfredo.jpg">
+                <!-- Fallback -->
+                <img src="../img/pasta-alfredo.jpg" alt="Pasta Alfredo" class="recipe-featured-img">            
+              </picture>
+           
 
             <!-- Encabezado -->
             <header class="recipe-header">
